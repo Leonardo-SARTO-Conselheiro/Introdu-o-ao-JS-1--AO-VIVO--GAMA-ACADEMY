@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS ESTÉTICA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Procedimentos - NS ESTÉTICA</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Procedimentos</h2>
+            <span>Lista de Procedimentos</span>
+        </div>
+
+        <div class="card">
+            <div class="inputs">
+                <label>Procedimentos:</label>
+                <input type="text" id="curso" placeholder="Nome do Procedimento">
+            </div>
+            <div class="inputs">
+                <label>Valores:</label>
+                <input type="text" id="valor" placeholder="Valor do Procedimento">
+            </div>
+            <button onclick="curso.salvar()">Salvar</button>
+            <button onclick="curso.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="lists">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Procedimento</th>
+                    <th>Investimento</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
